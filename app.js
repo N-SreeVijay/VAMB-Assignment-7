@@ -37,6 +37,11 @@ app.use(session({
     secret: '2f8d5c4b8b4eaa68c5b8c3b5a7e4d7f4b2e1e5c8f5f8e9f6a2e8e9f4b3c4a2e1',
     resave: false,
     saveUninitialized: true,
+    cookie: {
+        secure: process.env.NODE_ENV === 'production', // Set secure cookies in production
+        httpOnly: true, // Make sure cookies are not accessible via JavaScript
+        maxAge: 24 * 60 * 60 * 1000, // Session expiry time (1 day)
+    }
 }));
 
 // Set up Pug for templating
