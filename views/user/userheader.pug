@@ -1,0 +1,25 @@
+.line
+  header
+    img.logo(src="/assests/images/1.png")
+    nav.navbar
+      ul
+        li
+          a.Home(href="/userindex") HOME
+        li
+          a.about(href="/userabout") About
+        li
+          a.vis(href="/uservisit") Visit
+        li
+          a.doantion(href="/userdonation") Donation
+        li
+          a.job(href="/userjob") Job Application
+        li
+          a.con(href="/usercontact") Contact
+    nav.login
+      li
+        .avatar
+          img(src="/assests/images/pp.png", alt="User Avatar")
+          span #{name || 'Guest'}
+          .dropdown
+            a(href='/details') Profile
+            a(href='/logout') LOGOUT

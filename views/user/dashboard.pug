@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title Dashboard
+    link(rel="stylesheet", href="/assests/css/dash.css")
+    include ./dashuserheader.pug
+  body
+    .container
+      h1 Welcome to Your Dashboard!
+
+      if user
+        p Welcome back, #{user.name}! Here are your details:
+      else
+        p You are not logged in. Please log in to access your dashboard.
+
+      if user
+        .profile-info
+          p Name: #{user.name}
+          p Email: #{user.email}
+          p Mobile: #{user.mobile}
+          p Date of Birth: #{user.dob}
+          
+        a(href="/profile/edit-profile") Edit Profile
+
+      if user
+        a(href="/logout") Logout
+
+      .recent-activity
+        h2 Recent Donations
+        ul
+          if donations && donations.length > 0
+            each donation in donations
+              li
+                p Donation Amount: #{donation.amount}
+                p Date: #{donation.date.toLocaleDateString()}  
+                p Message: #{donation.message ? donation.message : 'No message'}
+          else
+            p No donations found.

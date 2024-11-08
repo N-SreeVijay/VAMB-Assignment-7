@@ -1,0 +1,58 @@
+[
+  {
+    "name": "vijay",
+    "mobile": "8985463210",
+    "email": "vijay@gmail.com",
+    "password": "sreevijay",
+    "dob": "2004-05-13"
+  },
+  {
+    "name": "vasu",
+    "mobile": "8985400256",
+    "email": "vasu@gmail.com",
+    "password": "vasu1234",
+    "dob": "2003-09-14"
+  },
+  {
+    "name": "basheer",
+    "mobile": "7896541230",
+    "email": "ali@gmail.com",
+    "password": "ali12345",
+    "dob": "2004-05-13"
+  },
+  {
+    "name": "sai",
+    "mobile": "8523697410",
+    "email": "sai@gmial.com",
+    "password": "sai@7894",
+    "dob": "2002-05-12"
+  },
+  {
+    "name": "ali",
+    "mobile": "6305697918",
+    "email": "b@gmail.com",
+    "password": "basha@1234",
+    "dob": "2004-05-13"
+  },
+  {
+    "name": "vamsi",
+    "mobile": "7788994455",
+    "email": "vamsi@gmail.com",
+    "password": "vamsi6721",
+    "dob": "2004-05-14"
+  },
+  {
+    "name": "parasa",
+    "mobile": "7896543210",
+    "email": "par@gmail.com",
+    "password": "robo@123",
+    "dob": "2004-05-16"
+  },
+  {
+    "name": "rajendra",
+    "mobile": "8143223242",
+    "email": "rajendra@gmail.com",
+    "password": "vijay@2005",
+    "dob": "1964-07-18"
+  }
+]

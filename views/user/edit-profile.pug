@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Edit Profile
+    link(rel="stylesheet", href="/assests/css/edit.css")
+  body
+    .container
+      h1 Edit Your Profile
+
+      
+
+      form(action="/edit-profile" method="POST")
+        label(for="name") Name:  #{user.name} 
+        input(type="text" name="name" placeholder= "Enter The new Name if you Want change else type same name" required)
+        
+        label(for="email") Email: #{user.email}
+        input(type="email" name="email" placeholder= "Enter The new mail if you Want change else type same mail" required)
+        
+        label(for="mobile") Mobile:  #{user.mobile}
+        input(type="text" name="mobile" placeholder= "Enter The new Number if you Want chage else type same Number" required)
+        
+        label(for="dob") Date of Birth: #{user.dob}
+        input(type="date" name="dob" placeholder= "Enter The new DOB if you Want chage else type same DOB" required)
+
+        button(type="submit") Update Profile
+
+      a(href="/details") Back to Dashboard

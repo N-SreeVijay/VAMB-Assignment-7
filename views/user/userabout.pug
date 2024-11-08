@@ -1,0 +1,127 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Team Members
+    link(rel="stylesheet", href="./assests/css/userabout.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+  body
+    include ./userheader.pug
+
+    main
+      .mv
+        h1.vis Our Vision
+        p.pa We seek to end animal agriculture by rescuing farmed animals, giving them lifelong care and sanctuary, and educating about the harms of animal farming.
+        p.pa and meet animals who are most commonly exploited, abused, and killed in animal agriculture. Our animal residents are given lifelong sanctuary and are treated with respect as individuals.
+        p.pa By giving farmed animals the chance to live their lives with dignity and by sharing their stories, we advocate for veganism and aim to reduce suffering for all
+
+      .Team
+        h1.team OUR TEAM
+        .team-container
+          .profile
+            img(src="./assests/images/vamsi.jpg", alt="Profile 1")
+            h3 P. Vamsi
+            p 221FA04672
+            p Team Lead
+          
+          .row
+            .profile
+              img(src="./assests/images/vasu.jpg", alt="Profile 2")
+              h3 J. VASU
+              p 221FA04475
+              p Team Member
+            .profile
+              img(src="./assests/images/vijay.jpg", alt="Profile 3")
+              h3 N. Sree Vijay
+              p 221FA04447
+              p Team Member
+            .profile
+              img.pp(src="./assests/images/meghana.jpg", alt="Profile 4")
+              h3 M. Meghana
+              p 221FA04445
+              p Team Member
+
+          .row
+            .profile
+              img.pp(src="./assests/images/bb.jpg", alt="Profile 5")
+              h3 B. BhanuLatha
+              p 221FA04448
+              p Team Member
+            .profile
+              img(src="./assests/images/arshitha.jpg", alt="Profile 6")
+              h3 T. Rama Arshitha
+              p 221FA04450
+              p Team Member
+
+      .meet
+        h1.meet MEET THE RESCUE'S
+        .card-container
+          .card
+            .card-side.front
+              div Animal-1
+              img(src="./assests/images/r1.jpg", alt="Card Front Image")
+            .card-side.back
+              div Name: Charlie
+              div(style="color: green;") .
+              div RescuedOn: 24-09-2020
+          .card
+            .card-side.front
+              div Animal-2
+              img(src="./assests/images/r2.jpg", alt="Card Front Image")
+            .card-side.back
+              div Names: Bob, Dudley and Bhairav
+              div(style="color: green;") .
+              div Rescued on: 12-12-2020
+          .card
+            .card-side.front
+              div Animal-3
+              img(src="./assests/images/r3.jpg", alt="Card Front Image")
+            .card-side.back
+              div Names: Kim and Jim
+              div(style="color: green;") .
+              div Rescued On: 13-06-2021
+          .card
+            .card-side.front
+              div Animal-4
+              img(src="./assests/images/r4.jpg", alt="Card Front Image")
+            .card-side.back
+              div Names: Chechu and Chiku
+              div(style="color: green;") .
+              div Rescued On: 13-06-2021
+          .card1
+            .card-side.front
+              div Animal-5
+              img(src="./assests/images/r5.jpg", alt="Card Front Image")
+            .card-side.back
+              div Names: Subramani 2.O
+              div(style="color: green;") .
+              div Rescued On: 13-06-2021
+          .card1
+            .card-side.front
+              div Animal-6
+              img(src="./assests/images/r6.webp", alt="Card Front Image")
+            .card-side.back
+              div Names: mike and frank
+              div(style="color: green;") .
+              div Rescued On: 13-06-2021
+          .card1
+            .card-side.front
+              div Animal-7
+              img(src="./assests/images/r7.jpg", alt="Card Front Image")
+            .card-side.back
+              div Names: Timmy
+              div(style="color: green;") .
+              div Rescued On: 13-06-2021
+          .card1
+            .card-side.front
+              div Animal-8
+              img(src="./assests/images/r8.webp", alt="Card Front Image")
+            .card-side.back
+              div Names: Sai AND TEAM
+              div(style="color: green;") .
+              div Rescued On: 13-06-2023
+
+    include ./userfooter.pug
+
+    script(src="/assests/js/about.js")

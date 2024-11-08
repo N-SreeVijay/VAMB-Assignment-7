@@ -1,0 +1,207 @@
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/07.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    width:100%;      
+    margin-top: 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-left: 0;
+    backdrop-filter: blur(5px);
+}
+.logo
+{
+    height: 120px;
+    width: 140px;
+}
+.line
+{
+    box-shadow: 0px 15px 10px -15px var(#4CAF50);
+    position: fixed;  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    padding: 1rem 0;
+    margin-bottom: 500px;
+    width: 99%;
+}
+
+.navbar ul {
+
+    margin-top: 50px;
+    display:flex;
+    list-style: none;
+    gap:40px;  
+    margin-left: 150px;  
+}
+.navbar ul a{
+    color:var(--color);
+    text-decoration: none;
+    transition: all 1s;
+    font-size: larger;
+    
+}
+.navbar ul a:hover
+{
+    color: #deb763;
+}
+.login{
+    margin-top: 50px   ;
+    list-style: none;
+}
+
+
+.login-btn {
+    text-decoration: none;
+    background-color:#deb763;
+    color: var(--bg-color); 
+    padding: 15px 30px;
+    border: solid 2px black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.login-btn:hover {
+    background-color: var(--color);
+}
+.form {
+    border: 2px solid white;
+    backdrop-filter: blur(9px);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.name,.email, .password,.num,.dob {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.link {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #000000;
+}   
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    main{
+        margin-top: 350px;
+        margin-bottom: 100px;
+    }
+
+    .login-btn {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .form {
+        padding: 15px;
+        max-width: 90%; 
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .name, .email, .password, .num,
+    .submit-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        height: 100px;
+        width: 120px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

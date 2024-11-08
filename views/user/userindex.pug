@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title VAMB FARM SANCTUARY
+    link(rel="stylesheet" href="./assests/css/userstyle.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+  body
+    include ./userheader.pug
+
+    main
+      .wel
+        video(autoplay muted loop)
+          source(src="./assests/images/videoplayback.mp4" type="video/mp4")
+          | Your browser does not support the video tag.
+        h1.msg A HOME FOR RESCUED FARM ANIMALS
+      .donation
+        h2 Subscribe For Latest News
+        p Stay informed with the latest updates, news, and exclusive offers delivered straight to your inbox. By subscribing to our newsletter,
+        p Don't miss out on any updates! Enter your Details below to subscribe.
+        form#donation-form(action="/user" method="POST")
+          label(for="name") Your Name:
+          input#name(type="text" name="name" required)
+          label(for="email") Your Email:
+          input#email(type="email" name="email" required)
+          label(for="moblie") Moblie Number
+          input#Moblie(type="tel" name="mobile" min="10" required)
+          button(type="submit") Subscribe Now
+          p#response-message
+      div
+        h2.join Join the kindness
+        p.jp VAMB Farm Sanctuary is dedicated to the lifetime care of a limited population of ill, disabled, senior, orphaned or otherwise surrendered farmed animals as well.
+        p.jp Our extensive humane education programs help even more animals in need.
+        p.jp Rescuing is made possible by the generosity of our volunteers, donors, neighbors, and other supporters. Make the world a kinder place for animals and people!
+        .container
+          .square
+            a(href="/userdonation")
+              .circle.red
+                span Donate
+                .hover-image(style="background-image: url('./assests/images/i1.jpg')")
+          .square
+            a(href="/uservisit")
+              .circle.orange
+                span Visit
+                .hover-image(style="background-image: url('./assests/images/i2.jpg')")
+          .square
+            a(href="./userjob")
+              .circle.blue
+                span Volunteer
+                .hover-image(style="background-image: url('./assests/images/i3.jpg')")
+          .square
+            a(href="./usercont")
+              .circle.green
+                span FAQ'S
+                .hover-image(style="background-image: url('./assests/images/i4.jpg')")
+    include ./userfooter.pug
+
+  script(src="assests/js/index.js")

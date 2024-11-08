@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/don.png);
+    background-repeat: no-repeat;
+
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    width:99.55%;      
+    margin-top: 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    
+
+}
+.logo
+{
+    height: 120px;
+    width: 140px;
+}
+.line
+{
+    box-shadow: 0px 15px 10px -15px var(#4CAF50);
+    position: fixed;  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    padding: 1rem 0;
+    margin-bottom: 500px;
+}
+
+.navbar ul {
+
+    margin-top: 50px;
+    display:flex;
+    list-style: none;
+    gap:40px;    
+}
+.navbar ul a{
+    color:var(--color);
+    text-decoration: none;
+    transition: all 1s;
+    font-size: larger;
+}
+.navbar ul a:hover
+{
+    color: #deb763;
+}
+.login{
+    margin-top: 50px   ;
+    list-style: none;
+}
+
+
+.login-btn {
+    text-decoration: none;
+    background-color:#deb763;
+    color: var(--bg-color); 
+    padding: 15px 30px;
+    border: solid 2px black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.login-btn:hover {
+    background-color: var(--color);
+}
+.donh1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+main{
+    margin-top: 150px;
+}
+.con {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 97vh;
+}
+
+.con .left {
+    color: var(--color);
+    width: 50%;
+    padding-left: 20px;
+    
+}
+.con .left .h22 {
+    font-family: 'Arial', sans-serif; /* Approximation of the font */
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0A0A0A; /* Dark brown color similar to the image */
+  line-height: 1.2; /* Slightly adjusted line height */
+  letter-spacing: 0.05em; /* Adds spacing between letters */ 
+  width: 80%;  
+  backdrop-filter: blur(15px);
+}
+.con .left h2 {
+    font-family: 'Arial', sans-serif; /* Approximation of the font */
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2F4F4F; /* Dark brown color similar to the image */
+  line-height: 1.2; /* Slightly adjusted line height */
+  letter-spacing: 0.05em; /* Adds spacing between letters */    
+}
+
+.con .right {
+    width: 50%;
+    height: 50%;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.box {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#topDonations {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 2px solid white;
+    backdrop-filter: blur(8px);
+}
+
+.quick-links {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.quick-links h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: color 0.3s;
+
+}
+
+.quick-links a:hover {
+    color: #0056b3;
+}
+
+.footer-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.social-icons {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+}
+
+.avatar span {
+    color: black;
+    font-size: 16px;
+
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown a {
+    display: block;
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.avatar:hover .dropdown {
+    display: block;
+}

@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Vijay's | Portfolio
+    link(rel="stylesheet" href="./assests/css/don.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+    script(src="./assets/java/index.js")
+
+  body
+    // Including header
+    include ./header1.pug
+
+    main
+      section#home
+        .con
+          .left
+            h2 YOU WERE BORN 
+            h2 WITH THE ABILITY TO 
+            h2 CHANGE SOMEONE'S LIFE, 
+            h2(class="h22") DON'T EVER WASTE IT.
+          .right
+            h1.donh1 Make a Donation
+            form#donationForm(action="/d/donate" method="POST")
+              input#name(type="text" name="name" placeholder="Name" class="box" required)
+              input#email(type="email" name="email" placeholder="Email" class="box" required)
+              input#amount(type="number" name="amount" placeholder="Amount" class="box" required)
+              button(type="submit") Donate
+
+    // Including footer
+    include ./footer1.pug
+
+    // External script for donation handling
+    script(src="donation.js")

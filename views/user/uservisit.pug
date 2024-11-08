@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title VAMB FARM SANCTUARY
+    link(rel="stylesheet", href="./assests/css/uservisit.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+  body
+    include ./userheader.pug
+      
+    main  
+      .alert-box
+        p.alert
+
+      form.form
+        h1.heading VISITING BOOKING
+        input(name="name", type="text", placeholder="Name", autocomplete="off", class="name", required)
+        input(name="email", type="email", placeholder="E-mail", autocomplete="off", class="email", required)
+        input(name="number", type="number", placeholder="Number", autocomplete="off", class="num", required)
+        input(name="members", type="number", placeholder="No. of Members", autocomplete="off", class="mem", required)
+        input(type="date", id="date", name="date", class="date", required)
+        select.gift(id="gifts", required)
+          option(value="") --Choose a Gift--
+          option(value="tote") Eco-Friendly Tote Bag
+          option(value="mug") Customized Mug
+          option(value="sticker") Animal-Themed Stickers
+
+        input(type="submit", value="BOOK", class="book")
+    
+    include ./userfooter.pug
+
+    script(src="./assests/js/visit.js")

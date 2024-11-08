@@ -1,0 +1,248 @@
+header{
+  display:flex;
+  justify-content: space-between;
+  width:99.55%;      
+  margin-top: 0px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 0;
+  margin-bottom: 150px;
+  backdrop-filter: blur(5px);
+}
+.team{
+  text-align: center;
+  color: white;
+}
+.logo
+{
+  height: 120px;
+  width: 140px;
+}
+.line
+{
+  box-shadow: 0px 15px 10px -15px var(#4CAF50);
+  position: fixed;  
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--bg-color);
+  padding: 1rem 0;
+  margin-bottom: 500px;
+  width: 99.55%;
+}
+
+.navbar ul {
+
+  margin-top: 50px;
+  display:flex;
+  list-style: none;
+  gap:40px;    
+}
+.navbar ul a{
+  color:var(--color);
+  text-decoration: none;
+  transition: all 1s;
+  font-size: larger;
+  font-weight: bolder;
+  margin-right:10px ;
+}
+.navbar ul a:hover
+{
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid greenyellow;
+}
+
+
+
+.login-btn {
+  text-decoration: none;
+  background-color:#deb763;
+  color: var(--bg-color); 
+  padding: 15px 30px;
+  border: solid 2px black; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+
+.login-btn:hover {
+  background-color: var(--color);
+}
+.meet
+{
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  border-top: 2px solid white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+  position: relative;
+  background: url('../images/09.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #eaf1e4; /* Light green background */
+  border-radius: 8px;
+  margin-top: 200px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff;
+}
+
+.avatar span {
+  color: black;
+  font-size: 16px;
+
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  color: #333;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.avatar:hover .dropdown {
+  display: block;
+}
+
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #2c6e49; /* Dark green for the title */
+  margin-bottom: 20px;
+}
+
+/* Profile info styling */
+.profile-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Profile info headings */
+.profile-info p {
+  font-size: 16px;
+  color: #4c9f70; /* Medium green for profile info text */
+  margin: 8px 0;
+}
+
+/* Edit profile link styling */
+.profile-info a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50; /* Green background */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.profile-info a:hover {
+  background-color: #388e3c; /* Darker green for hover effect */
+}
+
+/* Recent activity section */
+.recent-activity {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2c6e49; /* Dark green for the section heading */
+}
+
+/* Recent activity list items */
+.recent-activity ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recent-activity ul li {
+  background-color: #f1f8f4; /* Light green background for items */
+  padding: 10px;
+  border: 1px solid #d1e7d5; /* Light green border */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Logout link styling */
+a[href="/logout"] {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #28a745; /* Red background for logout */
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+a[href="/logout"]:hover {
+  background-color: #218838; /* Darker red for hover effect */
+}
+a[href="/profile/edit-profile"] {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  margin-left: 450px;
+  margin-right: 25px;
+  align-self: auto;
+  background-color: #28a745; /* Red background for logout */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+a[href="/profile/edit-profile"]:hover {
+  background-color: #218838; /* Darker red for hover effect */
+}

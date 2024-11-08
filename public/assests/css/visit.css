@@ -1,0 +1,240 @@
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background: url('../images/08.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header,main {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-left: 0;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    height: 120px;
+    width: 140px;
+}
+
+.line {
+    box-shadow: 0px 15px 10px -15px var(#4CAF50);
+    position: fixed;  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    margin-bottom: 500px;
+}
+
+.navbar ul {
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    gap: 40px;    
+}
+
+.navbar ul a {
+    color: black;
+    text-decoration: none;
+    transition: all 1s;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.navbar ul a:hover {
+    color: #0d9f21;
+}
+
+.login {
+    margin-top: 50px;
+    list-style: none;
+}
+
+.login-btn {
+    text-decoration: none;
+    background-color: #deb763;
+    color: var(--bg-color); 
+    padding: 15px 30px;
+    border: solid 2px black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.login-btn:hover {
+    background-color: var(--color);
+}
+
+.form {
+    border: 2px solid white;
+    backdrop-filter: blur(9px);
+    border-radius: 8px;
+    height: 500px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 70px;
+}
+
+.name, .email, .mem, .num, .date,.gift{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.book {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    font-size: 16px;
+    width: 250px;
+    background-color: #deb763;
+    font-weight: bolder;
+}
+
+.book:hover {
+    background-color: #F7EEDC;
+}
+
+footer {
+    backdrop-filter: blur(5px);
+    padding: 20px 0;
+    width: 100%;
+    border-top: 2px solid white;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin: 10px 0;
+}
+
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+
+    border-top: 1px solid #444;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    main{
+        margin-top: 250px;
+    }
+    
+    .form {
+        height: auto; 
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .heading {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .book {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        height: 100px;
+        width: 120px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .name, .email, .mem, .num, .date,
+    .book {
+        font-size: 14px;
+    }
+}
+
+
+
+

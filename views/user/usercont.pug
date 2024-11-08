@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Contact Us
+    link(rel="stylesheet" href="./assests/css/usercontact.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+  body
+    include ./userheader.pug
+    main
+      .contact-box
+        h2 Contact Us
+        form(action="https://api.web3forms.com/submit" method="POST")
+          input(type="hidden" name="access_key" value="14113bf4-6b3f-453a-b59d-87abb505ec8c")
+          .input-box
+            input(type="text" name="name" required placeholder=" ")
+            label Name
+          .input-box
+            input(type="email" name="email" required placeholder=" ")
+            label Email
+          .input-box
+            textarea(name="message" required placeholder=" ")
+            label Message
+          input(type="submit" value="Send")
+    include ./userfooter.pug
+  script(src="/assests/js/contact.js")

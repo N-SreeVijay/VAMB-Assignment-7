@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Job Application
+    link(rel="stylesheet", href="./assests/css/job.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+
+  body
+    include ./header.pug
+
+    main
+      section.jobd
+        h2.jobdh Available Positions
+        p
+          strong Farm Hand:
+          |  Assist with daily farm operations including planting, harvesting, and maintaining crops. Ideal for individuals who enjoy outdoor work and have a passion for agriculture.
+        p
+          strong Animal Caretaker:
+          |  Responsible for the care and feeding of farm animals. Must have experience with livestock and a love for animals.
+        p
+          strong Greenhouse Technician:
+          |  Oversee the growth of plants in a greenhouse environment. Requires knowledge of plant care and environmental control systems.
+        p
+          strong Marketing Assistant:
+          |  Help promote farm activities and events through social media and community outreach. Ideal for those with marketing experience and creativity.
+
+      .contact-box
+        h2 Application for Helping in Farm
+        form(action="https://api.web3forms.com/submit", method="POST")
+          input(type="hidden", name="access_key", value="becc0213-14d1-4a3d-9fab-daee0aeb6d3c")
+
+          .input-box
+            input(type="text", name="name", required, placeholder="")
+            label Name
+
+          .input-box
+            input(type="email", name="email", required, placeholder=" ")
+            label Email
+
+          .input-box
+            input(type="tel", name="phone", required, placeholder=" ")
+            label Phone Number
+
+          .input-box
+            input(type="text", name="position", required, placeholder=" ")
+            label Position
+
+          .input-box
+            textarea(name="cover_letter", required, placeholder=" ")
+            label Brief Description of your experience
+
+          input(type="submit", value="Send", class="submit-btn")
+
+    include ./footer.pug
+
+  script(src="/assests/js/job.js")

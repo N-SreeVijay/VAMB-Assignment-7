@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Login Page
+    link(rel="stylesheet" href="./assests/css/login.css")
+  body
+    main
+      .form
+        h1.heading Login
+        input.email(type="email" placeholder="E-mail" required)
+        input.password(type="password" placeholder="Password" required)
+        button.submit-btn log in
+        a.link(href="./reg") Don't have an account? Register one
+    include ./logheader.pug
+    footer
+      p &copy; 2024 VAMB ORGANIZATION. All rights reserved.
+  script(src="./assests/js/login.js")
